@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RectangleCustomView">
+        <attr name="rectCornerRadius" format="dimension">
+        </attr>
+
+        <attr name="borderLineSize" format="dimension">
+        </attr>
+
+        <attr name="borderLineColor" format="color">
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="CustomLinearLayout">
+
+        <attr name="addItem" format="string">
+        </attr>
+        
+        <attr name="itemTextSize" format="dimension">
+        </attr>
+
+        <attr name="itemTextPadding" format="dimension">
+        </attr>
+        
+        <attr name="itemTextColor" format="color">
+        </attr>
+        
+        <attr name="itemTextBackground" format="color">
+        </attr>
+    </declare-styleable>
+</resources>

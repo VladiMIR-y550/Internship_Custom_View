@@ -6,13 +6,31 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+    <com.mironenko.internship_custom_view.RectangleCustomView
+        android:id="@+id/customView"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:borderLineColor="#F10C0C"
+        app:borderLineSize="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:rectCornerRadius="10dp" />
+
+    <com.mironenko.internship_custom_view.CustomLinearLayout
+        android:id="@+id/customLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:itemTextBackground="@color/item_text_view_background"
+        app:itemTextColor="@color/item_text_view"
+        app:itemTextPadding="@dimen/itemTextViewPadding"
+        app:itemTextSize="@dimen/itemTextSize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/customView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
